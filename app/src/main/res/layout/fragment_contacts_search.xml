@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.contacts_search.ContactsSearchFragment" >
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.ketee_jishs.contacts.ui.ContactsViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragmentContactsSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true" >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contactsInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/contacts_input_layout_margin_horizontal"
+            android:layout_marginTop="@dimen/contacts_input_layout_margin_top"
+            android:layout_marginEnd="@dimen/contacts_input_layout_margin_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/contactsInputAutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences"
+                android:paddingStart="@dimen/contacts_input_auto_complete_text_view_padding_start"
+                android:textSize="@dimen/auto_complete_text_size"
+                tools:ignore="RtlSymmetry" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/foundedContact"
+            style="@style/FoundedContactLayoutStyle"
+            android:visibility="@{viewModel.foundedContactVisibility ? View.VISIBLE : View.GONE}"
+            app:layout_constraintEnd_toEndOf="@+id/contactsInputLayout"
+            app:layout_constraintStart_toStartOf="@+id/contactsInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/contactsInputLayout">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/contactNameTextView"
+                style="@style/TextAppearance.AppCompat.ContactPhoneStyle.ContactNameStyle"
+                android:text="@{viewModel.foundedName}"
+                tools:text="Иван Иванов" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/contactPhoneTextView"
+                style="@style/TextAppearance.AppCompat.ContactPhoneStyle"
+                android:text="@{viewModel.foundedPhone}"
+                tools:text="+7 (555) 123-45-67" />
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/contactsNotFountTextView"
+            style="@style/TextAppearance.AppCompat.ContactPhoneStyle.ContactsNotFoundTextStyle"
+            android:text="@string/contacts_not_found"
+            android:visibility="@{viewModel.visibility ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

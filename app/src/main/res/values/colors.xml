@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#54DA95</color>
+    <color name="color_primary_variant">#4ABF82</color>
+    <color name="color_on_primary">#3FA470</color>
+    <color name="color_secondary">#BB86FC</color>
+    <color name="color_secondary_variant">#A879E3</color>
+    <color name="color_on_secondary">#966BCA</color>
+    <color name="color_primary_transparent">#4D54DA95</color>
+    <color name="color_black">#000000</color>
+    <color name="window_background_color">#FFFFFF</color>
+</resources>

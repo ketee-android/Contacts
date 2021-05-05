@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/fragmentContactsList"
+        android:icon="@drawable/ic_contacts"
+        android:title="@string/list_contacts"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/fragmentContactsSearch"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search_contacts"
+        app:showAsAction="ifRoom" />
+</menu>

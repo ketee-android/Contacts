@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="contacts_input_layout_margin_horizontal">7dp</dimen>
+    <dimen name="contacts_input_layout_margin_top">10dp</dimen>
+    <dimen name="contacts_input_auto_complete_text_view_padding_start">10dp</dimen>
+    <dimen name="contacts_recycler_item_padding_top_and_start">7dp</dimen>
+    <dimen name="contacts_recycler_item_padding_bottom">3dp</dimen>
+    <dimen name="contact_phone_text_size">12sp</dimen>
+    <dimen name="contact_phone_text_alpha">0.5</dimen>
+    <dimen name="contact_name_text_size">16sp</dimen>
+    <dimen name="contact_name_text_alpha">1</dimen>
+    <dimen name="dividing_line_height">1px</dimen>
+    <dimen name="dividing_line_margin_top">7dp</dimen>
+    <dimen name="progress_bar_vertical_bias">0.4</dimen>
+    <dimen name="auto_complete_text_size">16sp</dimen>
+    <dimen name="contacts_not_found_text_size">16sp</dimen>
+    <dimen name="contacts_not_found_padding_start">0dp</dimen>
+    <dimen name="founded_contact_layout_margin_horizontal">7dp</dimen>
+    <dimen name="founded_contact_layout_margin_top">10dp</dimen>
+    <dimen name="founded_contact_layout_padding_bottom">7dp</dimen>
+</resources>

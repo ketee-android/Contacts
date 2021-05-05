@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Контакты</string>
+    <string name="search_contacts">Поиск контактов</string>
+    <string name="list_contacts">Список контактов</string>
+    <string name="input_layout_hint">Поиск контакта</string>
+    <string name="contacts_not_found">Контактов не найдено</string>
+</resources>

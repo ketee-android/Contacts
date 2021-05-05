@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MainTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <item name="android:navigationBarColor">@color/color_primary_variant</item>
+        <item name="android:windowBackground">@color/window_background_color</item>
+        <item name="colorOnSurface">@color/color_black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorSecondaryVariant">@color/color_secondary_variant</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="bottomNavigationStyle">@style/BottomNavigationViewStyle</item>
+        <item name="textInputStyle">@style/contactsTextInputLayoutStyle</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.ContactPhoneStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/contacts_recycler_item_padding_top_and_start</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/contact_phone_text_size</item>
+        <item name="android:alpha">@dimen/contact_phone_text_alpha</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.ContactPhoneStyle.ContactNameStyle">
+        <item name="android:paddingTop">@dimen/contacts_recycler_item_padding_top_and_start</item>
+        <item name="android:paddingBottom">@dimen/contacts_recycler_item_padding_bottom</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/contact_name_text_size</item>
+        <item name="android:alpha">@dimen/contact_name_text_alpha</item>
+    </style>
+
+    <style name="DividingLineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dividing_line_height</item>
+        <item name="android:layout_marginTop">@dimen/dividing_line_margin_top</item>
+        <item name="android:background">@color/color_black</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.ContactPhoneStyle.ContactsNotFoundTextStyle">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/contacts_not_found_text_size</item>
+        <item name="android:paddingStart">@dimen/contacts_not_found_padding_start</item>
+    </style>
+
+    <style name="FoundedContactLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/founded_contact_background</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginStart">@dimen/founded_contact_layout_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/founded_contact_layout_margin_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/founded_contact_layout_margin_top</item>
+        <item name="android:paddingBottom">@dimen/founded_contact_layout_padding_bottom</item>
+    </style>
+</resources>
